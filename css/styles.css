@@ -1,0 +1,139 @@
+body {
+    margin: 0px auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    min-width: 280px;
+    max-width: 1200px;
+}
+
+.titleBar {
+    margin: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 1px;
+}
+
+.add-task-container {
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-and-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.dotted {
+    border-top: 1px dashed black;
+    background-color: transparent;
+    width: 80%;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+.add-task-container input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 5px;
+    font-size: 1.2rem;
+}
+
+.add-task-container button {
+    outline: none;
+    border: 1px solid black;
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-task-container button:active {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+#items-list {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item {
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    padding: 0px 20px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.item-text {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+.fa-trash {
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 1.6rem;
+    box-shadow: 0px 0px 2px rgba(255, 0, 0, 0.2);
+}
+
+.fa-trash:hover {
+    color:rgba(255, 0, 0, 0.8)
+}
+
+.list-nothing {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-complete {
+    text-decoration: line-through;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    user-select: none;
+}
